@@ -59,7 +59,7 @@
 			id="page"
 			class="flex flex-1 flex-col overflow-x-hidden scroll-smooth"
 			style="scrollbar-gutter: auto;">
-			<main class="relative flex-auto p-5">
+			<main class="relative flex-auto p-2 md:p-5">
 				<slot />
 			</main>
 		</div>

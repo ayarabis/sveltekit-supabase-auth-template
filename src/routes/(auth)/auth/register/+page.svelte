@@ -57,7 +57,7 @@
 		</a>
 	</div>
 {/snippet}
-<section class="relative h-full overflow-x-auto">
+<section class="relative h-full overflow-x-auto py-8 md:py-0">
 	<div class="wrapper grid h-screen grid-cols-1 items-center justify-center lg:grid-cols-2">
 		<div class="flex items-start justify-center">
 			<Form.Root

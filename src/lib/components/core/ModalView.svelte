@@ -50,16 +50,13 @@
 	transition:fade={{ duration: 200 }}
 	class:hidden={!show}
 	class:bg-opacity-50={show}
-	class="backdrop sh-full fixed z-20 h-full w-full bg-black transition-all">
+	class="backdrop sh-full fixed z-20 flex h-full w-full items-center justify-center bg-black transition-all">
 	{#each $modals as modal, i (modal)}
 		<div
 			transition:scale={{ duration: 200, start: 0, easing: quartInOut }}
 			on:outroend={onModalClose}
 			tabindex="-1"
-			class={cn(
-				'absolute !left-1/2 !top-1/2 h-min w-auto -translate-x-1/2  -translate-y-1/2  overflow-y-auto overflow-x-hidden',
-				modal.class
-			)}>
+			class={cn(' h-min w-auto max-w-[90%]  overflow-y-auto overflow-x-hidden', modal.class)}>
 			{#if i != $modals.length - 1}
 				<!-- overlay for multi level modal -->
 				<div
@@ -86,7 +83,7 @@
 						{#if typeof modal.content == 'string'}
 							{@html modal.content}
 						{:else}
-							{@const    content = modal.content as Snippet<[any]>}
+							{@const     content = modal.content as Snippet<[any]>}
 							{@render content(modal.data)}
 						{/if}
 					</div>

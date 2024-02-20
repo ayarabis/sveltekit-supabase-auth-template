@@ -8,7 +8,7 @@
 		class: className,
 		backdropClosable = true
 	} = $props<{
-		children: Snippet<[any]>;
+		children?: Snippet<[any]>;
 		content: Snippet<
 			[
 				{
