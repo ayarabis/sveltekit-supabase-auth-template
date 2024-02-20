@@ -57,8 +57,8 @@
 		</a>
 	</div>
 {/snippet}
-<section class="wrapper relative h-screen bg-surface-50 dark:bg-surface-700">
-	<div class="grid h-screen grid-cols-1 items-center justify-center lg:grid-cols-2">
+<section class="relative h-full overflow-x-auto">
+	<div class="wrapper grid h-screen grid-cols-1 items-center justify-center lg:grid-cols-2">
 		<div class="flex items-start justify-center">
 			<Form.Root
 				{form}
@@ -67,7 +67,7 @@
 				let:config
 				let:loading>
 				<LoadingPane show={loading} />
-				<div class="space-y-4 md:space-y-6">
+				<div class="space-y-4 md:space-y-3">
 					<a
 						href="/home"
 						class="mb-6 flex items-center text-2xl font-semibold text-gray-900 dark:text-white">
@@ -122,7 +122,6 @@
 							<Form.ValidationError />
 						</Form.Field>
 					</Form.Group>
-
 					<Button
 						type="submit"
 						color="primary"
@@ -147,11 +146,3 @@
 		</div>
 	</div>
 </section>
-
-<style>
-	.wrapper {
-		background-image: url('/wave.svg');
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-</style>

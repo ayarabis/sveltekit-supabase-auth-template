@@ -12,8 +12,8 @@
 	});
 </script>
 
-<section class="wrapper h-screen bg-surface-50 dark:bg-surface-900">
-	<div class="grid h-screen grid-cols-1 items-center justify-center lg:grid-cols-2">
+<section class="relative h-full overflow-x-auto">
+	<div class="wrapper grid h-full grid-cols-1 items-center justify-center lg:grid-cols-2">
 		<div class="hidden h-full items-center justify-center p-10 lg:flex">
 			<div
 				class="drop-shadow-full flex aspect-square w-full max-w-[600px] items-center justify-center rounded-lg bg-gray-300/20 shadow-md">
@@ -28,7 +28,7 @@
 				let:loading
 				let:errors>
 				<LoadingPane show={loading} />
-				<div class="space-y-4 md:space-y-6">
+				<div class="space-y-4 md:space-y-3">
 					<a
 						href="/home"
 						class="mb-6 flex items-center text-2xl font-semibold text-gray-900 dark:text-white">
@@ -82,11 +82,3 @@
 		</div>
 	</div>
 </section>
-
-<style>
-	.wrapper {
-		background-image: url('/wave.svg');
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-</style>
