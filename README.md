@@ -14,11 +14,9 @@ A web authentication template built with SvelteKit and Supabase, providing a sea
 
 ## Screenshots
 
-<img src="./screenshots/Screenshot_2024-02-20_14-14-28.png" width="49%" />
-<img src="./screenshots/Screenshot_2024-02-20_14-14-35.png" width="49%" />
-<img src="./screenshots/Screenshot_2024-02-20_14-46-10.png" width="49%" />
-<img src="./screenshots/Screenshot_2024-02-20_14-50-17.png" width="49%" />
-<img src="./screenshots/Screenshot_2024-02-20_14-46-18.png" width="49%" />
+<img src="./screenshots/Screenshot_2024-02-20_14-14-28.png" width="33%" /> <img src="./screenshots/Screenshot_2024-02-20_14-14-35.png" width="33%" />
+<img src="./screenshots/Screenshot_2024-02-20_14-46-10.png" width="33%" /> <img src="./screenshots/Screenshot_2024-02-20_14-50-17.png" width="33%" />
+<img src="./screenshots/Screenshot_2024-02-20_14-46-18.png" width="33%" />
 
 ## Getting Started
 
