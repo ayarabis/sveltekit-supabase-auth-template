@@ -1,0 +1,36 @@
+<svg
+    viewBox="0 0 900 590"
+    xmlns="http://www.w3.org/2000/svg"
+    class="absolute bottom-0 z-0 h-min transition delay-150 duration-300 ease-in-out"
+>
+    <defs>
+        <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"
+        >
+            <stop offset="5%" stop-color="#1690a8"></stop>
+            <stop offset="95%" stop-color="#8ED1FC"
+            ></stop>
+        </linearGradient>
+    </defs>
+    <path
+        d="M 0,600 L 0,300 C 110.94736842105263,329.18660287081343 221.89473684210526,358.3732057416268 317,336 C 412.10526315789474,313.6267942583732 491.36842105263156,239.6937799043062 590,184 C 688.6315789473684,128.3062200956938 806.6315789473682,90.85167464114832 902,79 C 997.3684210526318,67.14832535885168 1070.1052631578948,80.89952153110048 1156,72 C 1241.8947368421052,63.10047846889952 1340.9473684210525,31.55023923444976 1440,0 L 1440,600 L 0,600 Z"
+        stroke="none"
+        stroke-width="0"
+        fill="url(#gradient)"
+        fill-opacity="0.53"
+        class="path-0 transition-all delay-150 duration-300 ease-in-out"></path>
+    <defs>
+        <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"
+        >
+            <stop offset="5%" stop-color="#1690a8"></stop>
+            <stop offset="95%" stop-color="#8ED1FC"
+            ></stop>
+        </linearGradient>
+    </defs>
+    <path
+        d="M 0,600 L 0,500 C 103.02392344497608,486.3636363636364 206.04784688995215,472.7272727272727 306,474 C 405.95215311004785,475.2727272727273 502.83253588516754,491.45454545454544 598,461 C 693.1674641148325,430.54545454545456 786.622009569378,353.4545454545455 871,321 C 955.377990430622,288.5454545454545 1030.6794258373207,300.72727272727275 1124,288 C 1217.3205741626793,275.27272727272725 1328.6602870813397,237.63636363636363 1440,200 L 1440,600 L 0,600 Z"
+        stroke="none"
+        stroke-width="0"
+        fill="url(#gradient)"
+        fill-opacity="1"
+        class="path-1 transition-all delay-150 duration-300 ease-in-out"></path>
+</svg>

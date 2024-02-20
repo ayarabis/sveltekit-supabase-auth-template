@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--theme-font-family-base: `system-ui`;
+		--theme-font-family-heading: `system-ui`;
+		--theme-font-color-base: 0 0 0;
+		--theme-font-color-dark: 255 255 255;
+		--theme-rounded-base: 9999px;
+		--theme-rounded-container: 8px;
+		--theme-border-base: 1px;
+		--on-primary: 0 0 0;
+		--on-secondary: 255 255 255;
+		--on-tertiary: 0 0 0;
+		--on-success: 0 0 0;
+		--on-warning: 0 0 0;
+		--on-danger: 0 0 0;
+		--on-surface: 0 0 0;
+		--color-primary-50: 238 252 253;
+		--color-primary-100: 212 245 249;
+		--color-primary-200: 175 234 242;
+		--color-primary-300: 120 217 232;
+		--color-primary-400: 57 191 215;
+		--color-primary-500: 30 162 188;
+		--color-primary-600: 28 130 158;
+		--color-primary-700: 29 106 129;
+		--color-primary-800: 32 86 106;
+		--color-primary-900: 31 73 90;
+		--color-primary-950: 19 60 78;
+		--color-secondary-50: 227 235 246;
+		--color-secondary-100: 217 228 243;
+		--color-secondary-200: 208 222 240;
+		--color-secondary-300: 179 201 231;
+		--color-secondary-400: 122 161 213;
+		--color-secondary-500: 65 121 195;
+		--color-secondary-600: 59 109 176;
+		--color-secondary-700: 49 91 146;
+		--color-secondary-800: 39 73 117;
+		--color-secondary-900: 32 59 96;
+		--color-tertiary-50: 237 249 248;
+		--color-tertiary-100: 231 247 246;
+		--color-tertiary-200: 226 245 244;
+		--color-tertiary-300: 208 239 237;
+		--color-tertiary-400: 172 226 224;
+		--color-tertiary-500: 137 214 210;
+		--color-tertiary-600: 123 193 189;
+		--color-tertiary-700: 103 161 158;
+		--color-tertiary-800: 82 128 126;
+		--color-tertiary-900: 67 105 103;
+		--color-success-50: 231 254 231;
+		--color-success-100: 203 252 204;
+		--color-success-200: 157 249 160;
+		--color-success-300: 100 242 108;
+		--color-success-400: 28 227 41;
+		--color-success-500: 22 204 37;
+		--color-success-600: 13 163 28;
+		--color-success-700: 15 124 28;
+		--color-success-800: 18 98 28;
+		--color-success-900: 20 83 29;
+		--color-success-950: 5 46 12;
+		--color-warning-50: 253 254 232;
+		--color-warning-100: 253 255 194;
+		--color-warning-200: 254 255 135;
+		--color-warning-300: 255 249 67;
+		--color-warning-400: 255 234 5;
+		--color-warning-500: 239 210 3;
+		--color-warning-600: 206 164 0;
+		--color-warning-700: 164 118 4;
+		--color-warning-800: 136 92 11;
+		--color-warning-900: 115 75 16;
+		--color-warning-950: 67 39 5;
+		--color-danger-50: 255 241 241;
+		--color-danger-100: 255 225 225;
+		--color-danger-200: 255 199 199;
+		--color-danger-300: 255 160 160;
+		--color-danger-400: 255 122 122;
+		--color-danger-500: 248 59 59;
+		--color-danger-600: 229 29 29;
+		--color-danger-700: 193 20 20;
+		--color-danger-800: 160 20 20;
+		--color-danger-900: 132 24 24;
+		--color-danger-950: 72 7 7;
+		--color-surface-50: 252 252 252;
+		--color-surface-100: 240 240 240;
+		--color-surface-200: 217 217 217;
+		--color-surface-300: 184 184 184;
+		--color-surface-400: 143 143 143;
+		--color-surface-500: 117 117 117;
+		--color-surface-600: 99 99 99;
+		--color-surface-700: 87 87 87;
+		--color-surface-800: 77 77 77;
+		--color-surface-900: 69 69 69;
+		--color-surface-950: 8 8 8;
+	}
+}
+
+@layer components {
+	.card {
+		@apply rounded-lg bg-surface-50 shadow-lg;
+	}
+
+	.dark .card {
+		@apply rounded-lg bg-surface-800 shadow-lg;
+	}
+
+	.card-header {
+		@apply p-4 pb-0;
+	}
+
+	.card-footer {
+		@apply p-4 pt-0;
+	}
+
+	a.card {
+		@apply transition-all hover:brightness-105;
+	}
+
+	.card-hover {
+		@apply transition-all hover:scale-[101%] hover:shadow-xl;
+	}
+
+	.button {
+		@apply gap-1 text-nowrap rounded-lg px-4 py-2 text-center text-sm text-white ring-inset focus:outline-none focus:ring-2 active:scale-95;
+	}
+	.button:disabled {
+		@apply hover:!cursor-not-allowed active:!scale-100;
+	}
+	.button.button-sm {
+		@apply px-2 py-1 text-sm;
+	}
+	.button.button-md {
+		@apply px-4 py-2 text-sm;
+	}
+	.button.button-lg {
+		@apply px-5 py-3 text-base;
+	}
+	.button.button-icon {
+		@apply aspect-square h-fit p-2;
+	}
+	.button.primary {
+		@apply bg-primary-700 text-white hover:bg-primary-800 focus:ring-primary-300 disabled:!bg-primary-500/50 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800;
+	}
+
+	.button.secondary {
+		@apply bg-secondary-700 text-white hover:bg-secondary-800 focus:ring-secondary-300 disabled:!bg-secondary-500/50 dark:bg-secondary-600 dark:hover:bg-secondary-700 dark:focus:ring-secondary-800;
+	}
+
+	.button.tertiary {
+		@apply bg-tertiary-700 text-white hover:bg-tertiary-800 focus:ring-tertiary-300 disabled:!bg-tertiary-500/50 dark:bg-tertiary-600 dark:hover:bg-tertiary-700 dark:focus:ring-tertiary-800;
+	}
+
+	.button.success {
+		@apply bg-success-700 text-white hover:bg-success-800 focus:ring-success-300 disabled:!bg-success-500/50 dark:bg-success-600 dark:hover:bg-success-700 dark:focus:ring-success-800;
+	}
+
+	.button.warning {
+		@apply bg-warning-700 text-white hover:bg-warning-800 focus:ring-warning-300 disabled:!bg-warning-500/50 dark:bg-warning-600 dark:hover:bg-warning-700 dark:focus:ring-warning-800;
+	}
+
+	.button.danger {
+		@apply bg-danger-700 text-white hover:bg-danger-800 focus:ring-danger-300 disabled:!bg-danger-500/50 dark:bg-danger-600 dark:hover:bg-danger-700 dark:focus:ring-danger-800;
+	}
+
+	.button.neutral {
+		@apply bg-white text-gray-600 ring-1 ring-gray-300 hover:bg-surface-100 disabled:!bg-gray-500/50 dark:bg-surface-700 dark:text-white dark:hover:bg-surface-800;
+	}
+}
+body {
+	@apply bg-surface-200 text-gray-800 dark:bg-surface-900 dark:text-gray-50;
+	font-family: 'Poppins', sans-serif;
+}
+
+.dark .logo {
+	content: url('/logo-white-shadow.png');
+}
