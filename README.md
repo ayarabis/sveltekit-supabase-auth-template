@@ -4,6 +4,8 @@
 
 A web authentication template built with SvelteKit and Supabase, providing a seamless experience for user authentication, registration, and account management.
 
+Live demo: https://sveltekit-supabase-auth-template.vercel.app/
+
 ## Features
 
 - **User Authentication**: Enable users to log in securely with email and password.
